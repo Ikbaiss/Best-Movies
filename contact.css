@@ -1,0 +1,100 @@
+body{
+    background: linear-gradient(20deg,black,black,blue) no-repeat center/cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+
+}
+form{
+    margin-top: 200px;
+    background-color: rgb(253, 255, 197);
+    width: 40%;
+    position: relative;
+    bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 4px 3px 12px rgb(255, 255, 255);
+
+}
+form h1{
+    text-align: center;
+    font-weight: 800;
+    text-shadow: 2px 2px 3px rgb(139, 139, 139);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(40, 12, 12);
+    font-size: 35px;
+}
+form>div{
+    margin: 10px;
+}
+#inp{
+    width: 100%;
+}
+form #inp input{
+width: 95%;
+height: 40px;
+background: #fbdf64;
+outline: none;
+border: none;
+padding: 20px;
+color: rgb(60, 60, 60);
+font-weight: 900;
+font-family: cursive;
+font-size: 20px;
+box-shadow: 2px 2px 8px black;
+border-radius: 15px;
+margin: auto;
+}
+form #inp input::placeholder{
+    color: black;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 20px;
+
+}
+textarea{
+    min-width: 100%;
+    max-width: 80%;
+    color: black;
+    font-size: 20px;
+    min-height: 50px;
+    background: #fff8d6;
+    box-shadow: 2px 2px 8px black;
+    outline: none;
+    border-radius: 10px;
+}
+textarea::placeholder{
+    color: black;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 20px;
+}
+[type="submit"]{
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 900;
+    background-color: rgb(235, 250, 197);
+    color: #11100a;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+[type="submit"]:active{
+    scale: 1.2;
+}
+#inp div{
+    margin: 20px;
+}
+label{
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+    text-shadow: 2px 2px 5px black;
+}

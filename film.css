@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Protest+Strike&display=swap');
+body{
+    background:linear-gradient(black, rgb(0, 0, 0),);
+        padding: 0px;
+        margin: 0px;
+    }
+    a{
+        color: aliceblue;
+        text-decoration: none;
+    }
+    /* *------------------------------------ Animation ------------------------------------------ */
+    .animation{
+        background: #000000;
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        color: #ffff;
+        animation-name: anim;
+        animation-duration: 12s;
+        animation-fill-mode: both;
+        
+    }
+    @keyframes anim{
+        0%{
+            background: #000000;
+            scale: 1;
+        }
+        50%{
+            background: #000000;
+            scale: 1;
+        }
+        75%{
+            background: #000000;
+            scale: 1;
+            background-color: transparent;
+            
+            scale: 1;
+        }
+        100%{
+            background-color: transparent;
+            scale: 0;
+                    
+            }
+        }
+    .animation h1{
+        color:rgb(187, 126, 126) ;
+        font-family: 'Protest Strike', sans-serif;      
+          text-shadow: 5px 5px 5px #ffff;
+        margin: 1px auto;
+        display: flex;
+        z-index: 3;
+        font-size:150px;
+        text-align: center;
+        animation-name: welc;
+        animation-duration: 7s;
+        animation-fill-mode: both;
+    }
+    @keyframes welc{
+        0%{
+            color: transparent;
+            text-shadow: 5px 5px 5px transparent;
+
+        }
+        10%{
+            color:rgb(255, 255, 255) ;
+            text-shadow: 5px 5px 8px #185df4db;
+        }
+        20%{
+            color: transparent;
+            text-shadow: 5px 5px 5px transparent;
+        }
+        30%{
+        color:rgb(255, 255, 255) ;
+            text-shadow: 5px 5px 8px #185df4db;
+        }
+        40%{
+            color: transparent;
+            text-shadow: 5px 5px 5px transparent;
+        }
+        50%{
+            color:rgb(255, 255, 255) ;
+            text-shadow: 5px 5px 8px #185df4db;
+        }
+        60%{
+            color: transparent;
+            text-shadow: 5px 5px 5px transparent;
+        }
+        70%{
+        color:rgb(255, 255, 255) ;
+            text-shadow: 5px 5px 8px #185df4db;
+        }
+        80%{
+            color: transparent;
+            text-shadow: 5px 5px 5px transparent;
+        }
+        90%{
+            color: transparent;
+            text-shadow: 5px 5px 5px transparent;
+        }
+        100%{
+            color: transparent;
+            text-shadow: 5px 5px 5px transparent;
+        }  
+    }
+    /* *------------------------------------- HEADER ----------------------------------------------- */
+    #tous{
+        width: 100%;
+        height: 500px;
+        background:rgba(0, 0, 0, 0.651);
+    }
+    header{
+        padding: 5px;
+        background:rgba(0, 0, 0, 0.744);
+        backdrop-filter:blur(20px) ;
+        display:flex ;
+        flex-direction: row;
+        position:  sticky;
+        z-index: 2;
+        top: 0;
+        height: 50px;
+        justify-content: space-between;
+    }
+    header nav{
+        color: white;
+        /* background: #000; */
+        display: flex ;
+
+    }
+    #nav2{
+        display: flex;
+        align-items: center;
+        padding-top: 25px;
+        overflow: hidden;
+        min-width: 700px;
+        justify-content:space-evenly ;
+    }
+    nav div{
+        display: flex;
+        align-items: center;
+    }
+    #favorit{
+        position: relative;
+        right: 11px;
+    }
+    
+    #nav2 h4{
+        text-shadow: 2px 2px 8px  rgb(93, 91, 89);
+        position: relative;
+        bottom:30px ;
+        transition: .5s;
+    }
+    #nav2 img{
+        position: relative;
+        opacity: 0;
+        top: 15px;
+        scale: .9;
+        /* box-shadow: 5px 5px 5px black; */
+        transition: .5s;
+    }
+    #nav1{
+        padding:0px 30px ;
+        width: 700px;
+        min-width: 700px;
+        display: flex;
+        justify-content:space-between ;
+    }
+    .search_inp{
+    position: relative;
+    right: 80px;
+    }
+    .search_inp img{
+        position: relative;
+        left:30px;
+        scale:.7;
+    }
+    #nav1 input{
+        width: 300px;
+        padding: 10px 10px 10px 35px;
+        border-radius: 20px;
+        border: none;
+        outline: 1px cyan;
+        color: #000;
+        background:#fff9f9;
+        box-shadow: 2px 2px 8px  rgb(93, 91, 89);
+        font-weight: 600;
+    }
+    #nav1 input::placeholder{
+        color: #000;
+        font-family: cursive;
+        font-weight: 600;
+    }
+    #nav1 .logo h1{
+        font-family: 'Protest Strike', sans-serif;        
+        font-size: 32px;
+        text-shadow: 5px 5px 10px black;
+    }
+
+    /* ^ ---------------------------------------------------------hover---------------------------------------------- */
+
+    #nav2 div:hover a> h4{
+        position: relative;
+        bottom:18px ;
+    }
+    #nav2 div:hover a>img{
+        opacity: 1;
+        scale: .8;
+        translate: 0 -7px;
+    }
+    #nav2 div:hover a>img{
+        filter: invert(50%) sepia(200%) saturate(3007%) hue-rotate(1deg) brightness(93%) contrast(1000%);
+    }
+    /* ^ --------------------------------------------------------content----------------------------------------------------------- */
+    .art1{
+        width: 100%;
+        position: relative;
+        /* bottom: 15px ; */
+        display: flex;
+        justify-content: center;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        height: 800px;
+        animation: movies 10s linear 1s 1   forwards;
+        background-attachment: fixed;
+    }
+
+ 
+    /* *----------------------------------------------------- ul ------------------------------- */
+
+    /*! ---------------------------------------------------------- list movies ------------------------------------------------------------------ */
+
+
+    /* ^ ------------------------------- card ------------------------------------ */
+    .Trending{
+        color: #ffffff;
+        font-size: 50px;
+        font-family: 'Protest Riot', sans-serif;
+        /* background: #000; */
+        font-weight: 900;
+        text-shadow:5px 3px 8px rgb(0, 0, 0) ;
+        padding-bottom: 50px;
+        letter-spacing: 1px;
+        text-decoration: white underline solid;
+
+    }
+    .art1_{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: relative;
+        top: 355px;
+        padding-top: 50px;
+        background-color: #000000;
+        
+    }
+    .art0{
+        padding-top: 100px;
+    }
+    .aflam{
+        /* background: #ffffff; */
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+    }
+     .film{
+        width:190px ;
+        height: 340px;   
+        background: #000000ac;
+        backdrop-filter: blur(50px);
+        box-shadow: 1px 1px 5px bisque;
+        margin: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .film:hover{
+        translate: 0px -10px;
+    }
+    .movie_photo{
+        overflow: hidden;
+        background: #000;
+        height: 285px;
+
+    }
+    .film .movie_photo .movies{
+        width: 100%;
+        height: 285px;
+    }
+    .film .movie_photo:hover img{
+        scale: 1.1;
+        transition: 1s;
+
+    }
+    .film .movie_photo .star{
+        position: relative;
+        translate: 50%;
+        bottom: 180px;
+        opacity: 0;
+        z-index: 3;
+    }
+
+    .film .movie_photo span{
+        position: relative;
+        left: 155px;
+        z-index: 3;
+        bottom: 330px;      
+        background: #ffffff;  
+        padding: 2px;
+        box-shadow: 2px 2px 8px rgb(45, 39, 27);
+        border-radius: 5px;
+    }   
+        .film .movie_photo:hover span{
+            background-color: rgba(248, 248, 78, 0.992);
+        }
+    .film .title_film{
+        position: relative;
+        bottom: 7px;
+        color: #fff9f9;
+    }
+    .movie_photo::before{
+        position: absolute;
+        content: '';
+        opacity:0;
+        width: 190px;
+        z-index: 3;
+        height: 285px;
+        transition: 1s;
+        border-radius: 10px 10px 0px 0px;
+        background-color: #0000007f ;
+        backdrop-filter: blur(4px);
+    }
+    .movie_photo:hover::before {
+        opacity:1;
+    }
+    .movie_photo:hover .star{
+        opacity: 1;
+    }
+    .film .title_film div:nth-child(1){
+        padding: 0px;
+        margin: 2px;
+        font-size: 12px;
+        position: relative;
+        left: 10px;
+    }
+    .film .title_film div:nth-child(2){
+        padding: 0px;
+        margin: 0px;
+    position: relative;
+    left: 10px;
+    bottom: 15px;
+}
+.film .title_film div:nth-child(3){
+    padding: 3px;
+    width: 45px;
+    margin: 0px;
+    position: relative;
+    left: 135px;
+    bottom: 38px;
+    font-weight: 700;
+    color: #000;
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 0);
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.451),-2px -2px 8px rgba(0, 0, 0, 0.423);
+}
+.but{
+    /* border: solid sienna; */
+    display: flex;
+        justify-content: center;
+        padding: 20px;
+        width:100% ;
+
+        height: fit-content;   
+        margin-left: 10px;
+        
+    }
+    .but a{
+        position: relative;
+        top: 0px;
+        cursor: pointer;
+    }
+    .art2{
+        background: #040113;
+    }
+    .title_film label{
+        position: absolute;
+        bottom:22px ;
+        right: 13px;
+    }
+    .title_film input{
+        display: none;
+    }
+    .title_film input:checked~label img{
+        filter: invert(50%) sepia(200%) saturate(3007%) hue-rotate(1deg) brightness(93%) contrast(1000%);
+
+
+    }
+    .art2{
+        background: #170000;
+    }
+    .arta{
+        background: #000413;
+    }
+/* *------------------------------------------------- */
+
+
+footer{
+    padding: 50px 0px 0px;
+    background: #333232;
+    display: flex;
+    position: relative;
+    top: 350px;
+    justify-content: space-around;
+    align-items: center;
+}
+        
+.paragraphe{
+    width: 40%;
+    color: #fff9f9;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+}
+footer div:nth-child(1){
+    font-size: 30px;
+    font-family: 'Protest Strike', sans-serif;     
+    color: #fff9f9; 
+}
+
+
+
+footer div:nth-child(3){
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+
+}

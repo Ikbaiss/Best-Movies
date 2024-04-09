@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Protest+Strike&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+body{
+    background: url(pageimage/family.jpg) no-repeat center/cover ;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+*{
+    color: aliceblue;
+}
+/* *---------------------------------------------   Logo    ----------------------------------------------------- */
+.logotitre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Protest Strike', sans-serif;        
+    text-shadow: 3px 3px 9px #000;
+}
+.minlogo{
+font-size: 30px;
+position: relative;
+bottom: 20px;
+}
+/* *----------------------------------------------- */
+section{
+    height: 650px;
+    margin-top: 90px;
+    display: flex;
+    width: 90vw;
+    backdrop-filter: blur(30px);
+    flex-direction: row;
+    min-width: 1400px;
+    max-width: 1400px;
+    width: 90vw;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black ,
+    -5px -5px 10px black
+        ;
+}
+#art1{
+    flex-grow: 1;
+    width: 40%;
+    min-width: 500PX;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.content_1_art_1{
+    display:flex;
+    position: relative;
+    bottom: 25px;
+    width: 100%;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 10px;
+    min-width: 400px;
+}
+.content_1_art_1>div{
+    background-color: rgb(240, 235, 201);
+    padding: 10px 13px ;
+    display: flex;
+    align-items: center;
+    border-radius:30px;
+    box-shadow: 2px 2px 10px black;
+}
+.content_1_art_1>div:hover{
+    scale: 1.1;
+    box-shadow: 5px 5px 10px black;
+    background: linear-gradient(to left , rgb(255, 255, 255) , rgb(219, 226, 142) , rgb(220, 226, 112));
+}
+.content_1_art_1 div a{
+    text-decoration: none;
+}
+article>div{
+    margin: 7px;
+}
+.content_1_art_1 span{
+    color: #000; 
+    position: relative;
+    bottom: 8px; 
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* *----------------------- hr ---------------------- */
+.content_2_art_1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-family: cursive;
+}
+.content_2_art_1 hr{
+    width: 190px;
+    color: rgb(255, 255, 255);
+}
+/* *-------------------------------formulaire---------------------------- */
+.content_3_art_1,form{
+width: 100%;
+/* background: #000; */
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+form div{
+    margin: 4px;
+}
+form div .rempli{
+    color: rgb(255, 255, 255);
+    background-color: rgba(244, 233, 171, 0.233);
+    width: 280px;
+    font-size: 20px;
+    outline: #ffffff;
+    padding: 8px 15px 8px 43px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 3px 10px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.rempli::placeholder{
+    color: rgb(223, 224, 161);
+}
+.input img{
+    position: relative;
+    left: 40px;
+    top: 10px;
+    scale: .7;
+}
+/* *------------------------------- submit--------------------------------------- */
+[type='submit']{
+    color: #000;
+    position: relative;
+    top: 8px;
+    padding: 12px 15px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 3px 10px black;
+    background-color: rgb(240, 235, 201);
+    font-family: 'Black Ops One', system-ui;
+    cursor: pointer;
+}
+[type='submit']:hover{
+    background: linear-gradient(to left , rgb(255, 255, 255) , rgb(219, 226, 142) , rgb(220, 226, 112));
+    scale: 1.1;
+}
+#sign{
+    position: relative;
+    bottom: 10px;
+}
+#sign a{
+    color: rgb(115, 163, 252);
+    text-decoration: none;
+}
+#art2{
+    border-radius: 50px 0px 0px 50px;
+    width: 60%;
+    flex-grow: 2;
+    background:url(pageimage/family.jpg)no-repeat center/cover ;}
